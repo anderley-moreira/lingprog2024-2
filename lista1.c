@@ -67,13 +67,37 @@ void q7() {
 
 //8. Faça um programa que leia dois números inteiros e imprima a
 //   subtração deles.
-
-//9. Faça um programa que leia umnúmero real e imprima ¼ deste número.
-
+void q8() {
+    int n1,n2,subt;
+    printf("Digite o primeiro número: ");
+    scanf("%d",&n1);
+    printf("Digite o segundo número: ");
+    scanf("%d",&n2);
+    subt = n2 - n1;
+    printf("O resultado é: %d\n", subt);
+}
+//9. Faça um programa que leia um número real e imprima ¼ deste número.
+void q9() {
+    float num,result;
+    printf("Digite um número: ");
+    scanf("%f", &num);
+    result = num/4;
+    printf("O resultado é: %.0f\n", result);
+}
 //10. Faça um programa que leia três números reais e calcule a
 //    média aritmética destes números. Ao final, o programa deve
 //    imprimir o resultado do cálculo.
-
+void q10() {
+    float n1,n2,n3,result;
+    printf("Digite o primeiro número: ");
+    scanf("%f",&n1);
+    printf("Digite o segundo número: ");
+    scanf("%f",&n2);
+    printf("Digite o terceiro número: ");
+    scanf("%f",&n3);
+    result = (n1 + n2 + n3)/3;
+    printf("A média dos números é: %.0f\n", result);
+}
 //11. Faça um programa que leia dois números reais e calcule as
 //    quatro operações básicas entre estes dois números, adição,
 //    subtração,multiplicação e divisão. Ao final, o programa
@@ -82,13 +106,35 @@ void q7() {
 //12. Faça um programa que leia um número real e calcule o
 //    quadrado deste número. Ao final, o programa deve
 //    imprimir o resultado do cálculo.
-
+void q12() {
+    float num,result;
+    printf("Digite um número: ");
+    scanf("%f", &num);
+    result = num*num;
+    printf("O resultado é: %.0f\n", result);
+}
 //13. Faça um programa que leia o saldo de uma conta poupança e
 //    imprima o novo saldo, considerando um reajuste de 2%.
-
+void q13() {
+    float num,result;
+    printf("Digite o saldo: ");
+    scanf("%f", &num);
+    result = num*1.2;
+    printf("Valor de saldo corrigido: R$ %.2f\n", result);
+}
 //14. Faça um programa que leia a base e a altura de um retângulo
 //    e imprima o perímetro (base*2 + altura*2) e a área (base * altura).
-
+void q14() {
+    float bas,alt,perim,area;
+    printf("Informe a medida da Base: ");
+    scanf("%f", &bas);
+    printf("Informe a medida da Altura: ");
+    scanf("%f", &alt);
+    perim = (bas*bas)+(alt*alt);
+    area = bas*alt;
+    printf("Medida da Base: %.0f\n", perim);
+    printf("Medida da Área: %.0f\n", area);
+}
 //15. Faça um programa que leia o valor de um produto, o percentual
 //    do desconto desejado e imprima o valor do desconto e o valor
 //    do produto subtraindo o desconto.
@@ -129,6 +175,6 @@ void q7() {
 //    necessário também ler o valor da cotação do dólar.
 
 int main() {
-    q5();
+    q14();
     return EXIT_SUCCESS;
 }
