@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
-
+#include <stdlib.h> //https://github.com/ifmt-cba/lingprog20242
 /*
 Exercícios sobre os comandos básicos em C
 */
