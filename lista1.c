@@ -137,18 +137,40 @@ void q14() {
 //15. Faça um programa que leia o valor de um produto, o percentual
 //    do desconto desejado e imprima o valor do desconto e o valor
 //    do produto subtraindo o desconto.
-
+void q15() {
+    float vd, pdc, vp;
+    printf("Informe o valor do produto: ");
+    scanf("%f", &vp);
+    printf("Digite a porcentagem de desconto concedido: ");
+    scanf("%f", &pdc);
+    vd=vp-(vp*(pdc/100));
+    printf("Valor total do produto R$ %.2f",vd);
+}
 //16. Faça um programa que calcule o reajuste do salário de um
 //    funcionário. Para isso, o programa deverá ler o salário atual
 //    do funcionário e ler o percentual de reajuste. Ao final imprimir
 //    o valor do novo salário.
-
+void q16() {
+    float slnv, sl, aj;
+    printf("Informe o valor salarial: ");
+    scanf("%f",&sl);
+    printf("Digite o porcentual de reajuste: ");
+    scanf("%f",&aj);
+    slnv=sl+sl*(aj/100);
+    printf("Valor salarial reajustado em R$: %.2f:", slnv);
+}
 //17. Faça um programa que calcule a conversão entre graus centígrados
 //    e Fahrenheit. Para isso, leia o valor em centígrados e calcule
 //    com base na fórmula a seguir. Após calcular o programa deve
 //    imprimir o resultado da conversão.
 //    F = (9 x C +160) / 5
-
+void q17() {
+    float t, tc;
+    printf("Informe a temperatura em Graus Centrígados: ");
+    scanf("%f,&t");
+    tc=(9*t+160)/5.0;
+    printf ("A temperatura em Fahrenheit é: %.2f",tc);
+}
 //18. Faça um programa que calcule a quantidade de litros de combustível
 //    consumidos em uma viagem, sabendo-se que o carro tem autonomia de
 //    12 km por litro de combustível. O programa deverá ler o tempo
@@ -174,6 +196,6 @@ void q14() {
 //    necessário também ler o valor da cotação do dólar.
 
 int main() {
-    q14();
+    q17();
     return EXIT_SUCCESS;
 }
